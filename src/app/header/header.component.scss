@@ -1,0 +1,29 @@
+@import "../app.component.scss";
+
+.degradado {
+    text-align: right;
+    width: auto;
+    height: 80px;
+    border-radius: 300% 0 0;
+    background: linear-gradient(80deg, $colorTextoVerde,$colorTextoVerdeClaro);
+    &::after {
+        content: "";
+        display: inline;
+        background: $colorTextoVerdeClaro;
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.container {
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.header {
+    width: 33%;
+    height: 80px;
+}
+.header2 {
+    width: 20%;
+    height: 80px;
+}

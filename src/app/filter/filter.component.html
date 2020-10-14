@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="container p-3">
+        <h3 class="text-center texto-verde">Prueba 2:</h3>
+        <h4 class="text-center texto-verde">filter()</h4>
+    </div>
+    <hr>
+    <p class="texto-gris">El método <strong>filter()</strong> filtra, como su propio nombre indica. Crea un nuevo array
+        con todos los elementos que cumplan la condición implementada por la función dada.</p>
+    <p class="texto-gris">El listado de fruta es: ['manzana', 'platano', 'uvas', 'mango', 'naranja']</p>
+    <p class="texto-gris">Con el método <strong>filter()</strong> buscará que elementos se repiten dentro de cada
+        posición del array. En el segundo input, aparte de <strong>filter()</strong>, para encontrar la posición,
+        hacemos que mediante el metodo <strong>map()</strong> busque el segundo valor dentro del array de objetos. </p>
+    <p class="texto-gris">Los Superéroes son: Superman, Batman, Iron Man, Capitan America, Wonder Woman, Spider-Man y
+        Ghost Spider</p>
+    <hr>
+    <div class="container row d-flex">
+
+        <form class="col-12 col-md-6" (ngSubmit)="onPruebaFilter(pruebaFiltrarInput)">
+            <div class="container d-flex pb-3">
+                <div class="col-11 ">
+                    <label for="pruebaFiltrar" class="label">Busca una fruta:</label>
+                    <br>
+                    <input class="inputArray" type="text" id="pruebaFiltrar" name="pruebaFiltrar"
+                        [(ngModel)]="pruebaFiltrarInput">
+                    <br>
+                    <div class="mt-3">
+                        <button class="boton-naranja" type="submit" value="Submit">Submit</button>
+                    </div>
+                    <div class="cuadro-fromEvent mt-2">
+                        <div class="container pt-2">
+                            <p>Dato introducido: {{pruebaFiltrarInput}}</p>
+                            <p>Resultado: {{resultadoPrueba3}}</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </form>
+
+        <form class="col-12 col-md-6" (ngSubmit)="onPruebaFilterMap(pruebaFiltrarMapInput)">
+            <div class="container d-flex pb-3">
+                <div class="col-11 ">
+                    <label for="pruebaFiltrarMap" class="label">Busca un Superhéroe:</label>
+                    <br>
+                    <input class="inputArray" type="text" id="pruebaFiltrarMap" name="pruebaFiltrarMap"
+                        [(ngModel)]="pruebaFiltrarMapInput">
+                    <br>
+                    <div class="mt-3">
+                        <button class="boton-verde" type="submit" value="Submit">Submit</button>
+                    </div>
+                    <div class="cuadro-fromEvent mt-2">
+                        <div class="container pt-2">
+                            <p>Heroe: {{pruebaFiltrarMapInput}}</p>
+                            <p>Su nombre real es: {{resultadoPruebaFilterMap}}</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>

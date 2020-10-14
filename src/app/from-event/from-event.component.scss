@@ -1,0 +1,37 @@
+/*
+$ejemplo: 1;
+$number: 10;
+$numberPixel: 50px;
+$numberGrados: 90deg;
+$numberSegundos: 20s;
+$string: "Gaizka";
+$string: none;
+$color: red;
+$color2: rgb(82, 124, 34);
+$color3: #aaff99;
+$list: 1px solid red;
+$list2: primary, secundary, tertiary;
+$boolean: true;
+$map: (
+    primary: red,
+    secundary: blue,
+    tertiary: green,
+);
+
+.menu {
+    grid-template {
+        columns: 20px 20px;
+        rows: auto;
+    }
+    .link {
+        text-decoration: none;
+    }
+}*/
+@import "../app.component.scss";
+
+.cuadro-fromEvent {
+    border-radius: 30px;
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 100px;
+}

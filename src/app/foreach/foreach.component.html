@@ -1,0 +1,42 @@
+<div class="container pl-5 pr-5  row d-flex">
+
+    <div class="comp-contenedor col-sm-12 col-md-6 pt-4 mb-4 text-center">
+        <h3 class="text-center texto-verde">forEach()</h3>
+
+
+        <form (ngSubmit)="onPruebaforEach(pruebaforEachInput)" >
+            <label class="label pl-3" for="pruebaforEach">
+                Prueba filter():
+            </label><br>
+            <input class="inputArray mb-3" type="text" id="pruebaforEach" name="pruebaforEach" [(ngModel)]="pruebaforEachInput"><br>
+
+            <button class="boton-verde mb-3" type="submit" value="Submit">Submit</button>
+
+        </form>
+
+
+        <form (ngSubmit)="onPruebaforEach2(pruebaforEachInput)">
+            <label class="label pl-3" for="pruebaforEach">
+                Prueba filter():
+            </label><br>
+            <input class="inputArray mb-3" type="text" id="pruebaforEach2" name="pruebaforEach2" [(ngModel)]="pruebaforEachInput"><br>
+
+            <button class="boton-verde mb-3" type="submit" value="Submit">Submit</button>
+
+        </form>
+
+    </div>
+
+  
+
+    <div class="container col-sm-12 col-md-6 mb-4 text-center">
+        <h1 class="texto-verde">lapiz</h1>
+        <h1 class="texto-verde">Resultado del forEach()</h1>
+        <p class="texto-gris"> Tipo de heroe: {{pruebaforEachInput}}</p>
+        <p>Hay {{cont}} heroes de ese tipo.</p>
+
+        <p class="texto-gris">Los héroes del tipo {{pruebaforEachInput}} son:</p>
+        <p class="boton-naranja">{{listaHeroes}}</p>
+    </div>
+
+</div>

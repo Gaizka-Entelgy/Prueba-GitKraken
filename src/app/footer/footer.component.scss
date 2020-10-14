@@ -1,0 +1,18 @@
+@import "../app.component.scss";
+
+.fondo-footer{
+    background-color: #4C5241;
+}
+.fondo-footer2{
+    background-color:  #2F3822;
+}
+
+.boton-footer{
+   @include boton-redondeado (white, $colorTextoBlanco, 12px, 70px)
+}
+
+.logo-footer{
+    max-width: 200px;
+    height: auto;
+    border-radius: 15px;
+}

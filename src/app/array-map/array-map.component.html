@@ -1,0 +1,64 @@
+<!-----------------------------------
+<h3>Pruebas de funciones de Arrays -map()- objetos</h3>
+
+<form name="demoMap2">
+    <div *ngFor='let opcion of opcionesPrueba2'>
+        <input type="radio" name="platos" value="{{opcion}}" (change)="onPruebaMap2($event)"><i>{{opcion}}</i>
+    </div>
+
+</form>
+<p>Dato introducido: {{seleccionadoPruba2}}</p>
+<p>Resultado: {{resultadoPrueba2}}</p>
+------------------------->
+<div class="container p-2">
+    <div class="container p-3">
+        <h3 class="text-center texto-verde">Prueba 1:</h3>
+        <h4 class="text-center texto-verde">-map()-</h4>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <p class="texto-gris">El método <strong>map()</strong> crea un nuevo array con los resultados de la llamada a la
+            función indicada
+            aplicados a cada uno de sus elementos. Es decir, pasa uno por uno por cada una de las posiciones de un array
+            original y ejecita las operaciones indicadas.</p>
+        <p class="texto-gris">El array original es: [1, 5, 10, 15]</p>
+        <p class="texto-gris">Introduce un número y el método <strong>map()</strong> multiplicará todos los valores por dicho número.</p>
+
+        <hr>
+
+        <div class="container">
+
+            <form (ngSubmit)="onPruebaMap()">
+                <div class="container row d-flex pb-3">
+                    <div class="col-12 col-lg-4 ">
+                        <label for="inputPruebaArray" class="label">Introduzca un número:</label>
+                        <br>
+
+                        <input type="number" class="inputArray" id="inputPruebaArray" name="inputPruebaArray"
+                            [(ngModel)]="inputPruebaArray">
+                        <br>
+                        <div class="mt-3">
+                            <button class="boton-naranja" type="submit" value="Submit">Submit</button>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-1"></div>
+
+                    <div class="col-12 col-lg-7">
+                        <div class="cuadro-fromEvent">
+                            <div class="container pt-2">
+                                <p>Dato introducido: {{inputPruebaArray}}</p>
+                                <p>Resultado: {{resultadoPrueba}}</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>

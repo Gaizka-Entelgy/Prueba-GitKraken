@@ -1,0 +1,43 @@
+[
+    {
+       "nombre": "Son Goku",
+       "raza": "Saiyan",
+       "nivelPoder": "50",
+       "tecnica": "Kame Hame Ha"
+    },
+    {
+        "nombre": "Vegeta",
+        "raza": "Saiyan",
+        "nivelPoder": "48",
+        "tecnica": "Gyarikku Ho"
+     },
+    
+     {
+        "nombre": "Son Gohan",
+        "raza": "Saiyan",
+        "nivelPoder": "45",
+        "tecnica": "Masenko"
+     },
+    
+     {
+        "nombre": "Piccolo",
+        "raza": "Namekusein",
+        "nivelPoder": "30",
+        "tecnica": "Makankosappo"
+     },
+    
+     {
+        "nombre": "Krilin",
+        "raza": "Humano",
+        "nivelPoder": "20",
+        "tecnica": "Kienzan"
+     },
+    
+     {
+        "nombre": "Yamcha",
+        "raza": "Humano",
+        "nivelPoder": "0",
+        "tecnica": "Sokidan"
+     } 
+    
+ ]

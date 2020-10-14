@@ -1,0 +1,36 @@
+<div class="container p-2">
+    <div class="container p-3">
+        <h3 class="text-center texto-verde">Prueba 4:</h3>
+        <h4 class="text-center texto-verde">BehaviorSubject</h4>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <p class="texto-gris">El BehaviorSubject es un tipo de variable, a modo de observable a otra variable. A este
+            primero se le introduciran unos datos a los que nos suscribimos desde el componente, de manera que todo
+            cambio en el fichero original quedará reflejado en el html.</p>
+    </div>
+
+    <hr>
+
+    <table class="table table-striped">
+        <thead> 
+            <tr>
+                <th>Nombre</th>
+                <th>Raza</th>
+                <th>Nivel de poder</th>
+                <th>Técnica</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of listaPersonajesTabla">
+                <td>{{item.nombre}}</td>
+                <td>{{item.raza}}</td>
+                <td>{{item.nivelPoder}}</td>
+                <td>{{item.tecnica}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
